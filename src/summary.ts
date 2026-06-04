@@ -84,6 +84,14 @@ export function formatSummary(
   }
 
   lines.push("Combined two-hand arrangement");
+  lines.push(`  Strategy: ${combined.strategy}`);
+  if (combined.channelClassifications.length > 0) {
+    for (const c of combined.channelClassifications) {
+      lines.push(
+        `    ch${c.channel + 1} "${c.trackName}": ${c.classification} (polyphony ${c.polyphony.toFixed(2)}) → ${c.assignedTo}`,
+      );
+    }
+  }
   lines.push(
     `  Source notes: ${combined.sourceNoteCount}  (from non-drum channels)`,
   );
