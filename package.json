@@ -2,6 +2,8 @@
   "name": "midi-sheet-prep",
   "version": "0.1.0",
   "description": "CLI that octave-shifts and clef-splits MIDI files so they fit a piano grand staff, plus a combined two-hand playable arrangement.",
+  "author": {"name": "Wade H", "email": "vdtdev.prod@gmail.com"},
+  "license": "MIT",
   "type": "module",
   "bin": {
     "midi-sheet-prep": "./dist/cli.js"
